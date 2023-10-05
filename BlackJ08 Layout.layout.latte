@@ -28,7 +28,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][1][Applets][211][Configuration]
-PreloadWeight=88
+PreloadWeight=100
 
 [Containments][1][Applets][211][Configuration][General]
 favoritesPortedToKAstats=true
@@ -60,7 +60,7 @@ plugin=org.kde.plasma.systemmonitor
 
 [Containments][1][Applets][57][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=25
+PreloadWeight=20
 
 [Containments][1][Applets][57][Configuration][Appearance]
 chartFace=org.kde.ksysguard.systach
@@ -87,7 +87,7 @@ plugin=org.kde.plasma.systemmonitor
 
 [Containments][1][Applets][58][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=10
+PreloadWeight=40
 
 [Containments][1][Applets][58][Configuration][Appearance]
 chartFace=org.kde.ksysguard.systach
@@ -102,7 +102,7 @@ cpu/all/usage=86,87,245
 
 [Containments][1][Applets][58][Configuration][Sensors]
 highPrioritySensorIds=["cpu/all/usage"]
-lowPrioritySensorIds=["cpu/all/cpuCount","cpu/all/coreCount"]
+lowPrioritySensorIds=["cpu/all/averageFrequency","cpu/all/averageTemperature"]
 totalSensors=["cpu/all/usage"]
 
 [Containments][1][Applets][59]
@@ -110,7 +110,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][1][Applets][59][Configuration]
-PreloadWeight=14
+PreloadWeight=5
 configMigrated=true
 showHumidityInTooltip=false
 showPressureInTooltip=false
@@ -143,7 +143,7 @@ PreloadWeight=0
 [Containments][1][Applets][60][Configuration][General]
 isInLatteDock=true
 isPreferredForDroppedLaunchers=false
-launchers59=applications:org.kde.spectacle.desktop,applications:systemsettings.desktop,applications:org.kde.discover.desktop,applications:org.kde.dolphin.desktop,file:///latte-separator1.desktop,applications:vivaldi-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop,applications:org.telegram.desktop.desktop,applications:discord.desktop,applications:vivaldi-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,file:///latte-separator2.desktop,applications:vivaldi-stable.desktop,applications:org.kde.konsole.desktop,applications:code.desktop,file:///latte-separator3.desktop
+launchers59=applications:org.kde.spectacle.desktop,applications:systemsettings.desktop,applications:org.kde.discover.desktop,applications:org.kde.dolphin.desktop,file:///latte-separator1.desktop,applications:FFPWA-01HC09NSNBTYT13V87B6H8GDWK.desktop,applications:telegram-desktop_telegram-desktop.desktop,applications:discord.desktop,applications:FFPWA-01HC09A8K9JZERVHM3N59E7XP8.desktop,file:///latte-separator2.desktop,applications:librewolf.desktop,applications:code.desktop,applications:org.kde.konsole.desktop,file:///latte-separator3.desktop
 showOnlyCurrentDesktop=true
 
 [Containments][1][Applets][61]
@@ -219,14 +219,14 @@ immutability=1
 plugin=org.kde.kscreen
 
 [Containments][190][Applets][194][Configuration]
-PreloadWeight=18
+PreloadWeight=5
 
 [Containments][190][Applets][196]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][190][Applets][196][Configuration]
-PreloadWeight=25
+PreloadWeight=5
 
 [Containments][190][Applets][196][Configuration][General]
 migrated=true
@@ -238,12 +238,8 @@ plugin=org.kde.plasma.notifications
 [Containments][190][Applets][199][Configuration]
 PreloadWeight=0
 
-[Containments][190][Applets][203]
-immutability=1
-plugin=org.kde.plasma.battery
-
 [Containments][190][Applets][203][Configuration]
-PreloadWeight=0
+PreloadWeight=42
 
 [Containments][190][Applets][204]
 immutability=1
@@ -259,27 +255,25 @@ plugin=org.kde.plasma.bluetooth
 [Containments][190][Applets][205][Configuration]
 PreloadWeight=0
 
-[Containments][190][Applets][209]
-immutability=1
-plugin=touchpad
-
 [Containments][190][Applets][209][Configuration]
-PreloadWeight=0
+PreloadWeight=42
 
 [Containments][190][Applets][217]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
+
+[Containments][190][Applets][218][Configuration]
+PreloadWeight=42
 
 [Containments][190][ConfigDialog]
 DialogHeight=540
 DialogWidth=882
 
 [Containments][190][General]
-extraItems=org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications,touchpad,org.kde.kscreen
-hiddenItems=xdm-app,touchpad,org.kde.plasma.clipboard,chrome_status_icon_1
+extraItems=org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.kscreen
+hiddenItems=xdm-app,org.kde.plasma.clipboard,chrome_status_icon_1
 knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.battery,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.kdeconnect,org.kde.kupapplet,org.kde.plasma.notifications,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardlayout,org.kde.kscreen
-scaleIconsToFit=true
-shownItems=org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement
+shownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement
 
 [Containments][25]
 activityId=
@@ -380,7 +374,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][25][Applets][189][Configuration]
-PreloadWeight=98
+PreloadWeight=100
 SystrayContainmentId=190
 
 [Containments][25][Applets][206]
